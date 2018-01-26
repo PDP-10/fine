@@ -1,0 +1,83 @@
+FINE (FINE Is Not EMACS) text editor for TOPS-10, written by Mike
+Kazar at C-MU in BLISS-10 in the early 1980's.
+
+Mike recently gave me permission to distribute FINE sources.
+Phil Budne 7/17/2002
+phil@ultimate.com
+
+Note; All files restored from backup saveset images read by backup10.
+Almost all files have original dates (exceptions noted below);
+
+================ C-MU files
+
+341,471/cmuold	2/9/80
+	version directly from CMU 2/80;
+	Start of save set FROMCMUA on MTA000 
+	System CMU10A 8.3/DEC 6.02A-VM TOPS-10 monitor 602A(14404) APR#1080
+	1600 BPI 9 track  9-Feb-80 00:03:07 BACKUP 2(216)-5 tape format 1
+
+solomon.foo	7/27/80
+	ftp'ed from CMU by Jon Solomon at Rutgers 27-Jul-80 16:04:55
+	saveset written by TOPS-20 DUMPER in "interchange" format;
+		no dates on files.
+
+================ University of New Orleans
+
+301,273/uno	8/21/80
+	see notes.uno dated Aug 21 1980 based on CMU version of 29-Jul-80
+	Files from Jim (Nothead) Thomas at University of New Orleans
+
+================ Stevens Tech files
+
+301,273/f3	7/27/80
+301,273/f4	8/25/80
+301,273/me3	8/29/80
+301,273/me3b	1/21/81 -- first version with terminal routines from MIT TECO
+Started keeping revision history and edit number (in versn.mac) 2/81
+301,273/me4	8/27/81 v1B(1057)-7
+301,273/f	11/1/81	v1B(1060)-7
+	intermediate versions for my endlessly mangled version at Stevens Tech
+	(301,273/f is final Stevens version? 11/1/81 -- w/ a fix from AHM@DEC!
+
+================ DEC Marlborough
+
+31,5666/301273/f 12/13/81 v1B(1100)-7
+	Alan Martin (AHM)'s version at DEC Marlboro
+	(branched from above after may 1981)
+	Final edit by me!
+
+31,5732/f	7/25/83	v1C(1130)-5
+	My seperate version at DEC Marlboro
+
+My observations;
+
+How hard it was to get anything done in those days.  Even Barb admits
+it was easier to write user programs on TOPS-20!  I only attempted a
+few personal projects on TOPS-10 after getting to DEC and having a
+choice.  But it was a tough row to hoe, I was always writing daemons
+of one sort or another, but the guardians of KL1026 saw anything
+running in user mode as a waste of cycles (Alan and I were clearly
+third class citizens*, working on the FORTRAN-10/20 compiler (despite
+the fact that it was probably the piece of DEC S/W that people bought
+systems to run (The best BASIC comming from U Penn Medical School).
+
+Second class citizenship was probably CUSP maintainers -- tools
+(MACRO and LINK) used by real men to make real code (the monitor).
+
+How much time we all spent reformatting code.
+
+How amazing that we lived without using source control!
+
+What an angry young man I was!  The comments are well, positively
+nasty at times!  And I don't think I saw any about Alan's bosses at
+the Stevens Computer Center, who were working on TECO (what ended up
+as TECO v200) -- I remember they stole FINE sources (mounted a private
+pack to read the code) to figure out how it figured out how to do
+screen updates using line insert/delete.  Then they did a one-up, and
+used the same algorithms for character insert/delete as well (all
+coded in MACRO, as real men were wont to). The screen updates were
+enough to give you montion sickness, I remember GNU EMACS had a
+similar effect on me when I first used it on slow lines...
+
+It seems we were all working on editors -- my freshman year roomate
+Rich Braun had wrote his own from scratch....
